@@ -130,7 +130,7 @@ mongoose.connect("mongodb+srv://mm1632002:1632002@mohamed1.lk0lj1s.mongodb.net/?
 
 app.get("/showArticle",async(req,res)=>{
     const s=await Article.find()
-    res.render("showArticle.ejs",{
+    res.render("index.ejs",{
         aaS:s
     })
 
