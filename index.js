@@ -20,17 +20,17 @@ mongoose.connect("mongodb+srv://mm1632002:1632002@mohamed1.lk0lj1s.mongodb.net/?
 
 //--------------------------
 //-----app---------
-// const app=express();
-// app.use(express.json())
+const app=express();
+app.use(express.json())
 
-// app.get("/mt",function(req,res){
+app.get("/mt",function(req,res){
     
-//   console.log(req.query); //{ g: '50' }
+  console.log(req.query); //{ g: '50' }
      
 
 
 // res.send(` iam is ${n1}`)
-// })
+})
 //----------------------------
 // body بيراميتر
 // app.get("/mt2",function(req,res){
