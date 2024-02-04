@@ -2,16 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1><%=name%></h1>
-    <p style="background:orange;padding: 10px;border-radius: 5px;"></style><%=number  %></p>
-    <%if(name=="n"){ %>
-        <p>Name is tarek</p>
-        <% } %>
+    <h1 style=" color: #1302ff;">Employee</h1>
+    <hr>
+ <div>
+ <%for (let article of aaS) {%>
+    <h1 style="color: #0012af;"><%= article.title %></h1>
+
+<h3 style="color: #ff0202;">
+    <%= article.body %>
+</h3>
+ 
+<p style="color: #ff0202;"> 
+    <%= article.mobel %>
+<br>   
+
+    <%= article.numberm %>
+
+</p>
+<hr>
+
+
+
+
+  
+<%}%>
+
+ </div>
 
 </body>
 </html>
