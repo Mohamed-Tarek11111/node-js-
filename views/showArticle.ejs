@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style=" color: #1302ff;">Employee</h1>
+    <hr>
+ <div>
+ <%for (let article of aaS) {%>
+    <h1 style="color: #0012af;"><%= article.title %></h1>
+
+<h3 style="color: #ff0202;">
+    <%= article.body %>
+</h3>
+ 
+<p style="color: #ff0202;"> 
+    <%= article.mobel %>
+<br>   
+
+    <%= article.numberm %>
+
+</p>
+<hr>
+
+
+
+  
+<%}%>
+
+ </div>
+
+</body>
+</html>
